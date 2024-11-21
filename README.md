@@ -123,7 +123,45 @@ BLIP2 (Bootstrapped Language-Image Pre-training) is a cutting-edge vision-langua
 ### Quantitative Metrics:
 
 - **Evaluation Metrics:** BLEU, METEOR, and ROUGE scores were used to evaluate the quality of the generated captions.
-- **Performance:** Despite limited training epochs and computational constraints, the model demonstrated reasonable performance on both validation and test sets.
+
+The performance of the model was evaluated using standard captioning metrics. Due to the **limited training epochs** (caused by hardware constraints), the results are lower than expected, but they provide a reasonable baseline for further fine-tuning and optimization.
+
+#### Metrics Achieved:
+
+- **BLEU-1:** 0.129
+- **BLEU-2:** 0.072
+- **BLEU-3:** 0.038
+- **BLEU-4:** 0.022
+- **METEOR:** 0.063
+- **ROUGE-L:** 0.175
+- **CIDEr:** 0.117
+- **SPICE:** 0.045
+
+#### Interpretation:
+
+1. **BLEU Scores:**
+
+   - **BLEU-1 (0.129):** Indicates the model captures some basic keywords from the ground-truth captions.
+   - The scores for higher n-grams (BLEU-2 to BLEU-4) drop significantly, reflecting the model's difficulty in generating longer coherent phrases.
+
+2. **METEOR (0.063):**
+
+   - METEOR evaluates both precision and recall. The low score reflects the limited overlap between generated and reference captions.
+
+3. **ROUGE-L (0.175):**
+
+   - ROUGE-L measures the longest common subsequence between the generated and reference captions. A score of 0.175 suggests the model occasionally aligns well with key sentence structures.
+
+4. **CIDEr (0.117):**
+
+   - CIDEr assesses how well the generated captions match human descriptions. The score indicates that, while some similarity exists, fine-tuning with more epochs is needed to improve domain-specific language generation.
+
+5. **SPICE (0.045):**
+   - SPICE evaluates the semantic content of the generated captions. A low score reflects the difficulty in generating captions with meaningful radiology-specific content.
+
+#### Note:
+
+These metrics are consistent with expectations given the **limited number of training epochs** and the size of the **filtered RGB dataset**. With additional computational resources and longer training, the model’s performance could improve significantly.
 
 ### Qualitative Observations:
 
