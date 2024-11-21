@@ -78,6 +78,48 @@ BLIP2 (Bootstrapped Language-Image Pre-training) is a cutting-edge vision-langua
 
 ## Results
 
+### Medical Image Examples with Captions
+
+#### Example 1: Abdominal CT Scan with Marked Anomalies
+
+<img src="images/output1.png" alt="Abdominal CT" width="400">
+
+**Real Caption:** CT scan image for lung cancer.
+
+**Generated Caption:** CT scan of the abdomen showing a large mass in the right lower quadrant.
+
+---
+
+#### Example 2: Doppler Ultrasound Image
+
+<img src="images/output2.png" alt="Doppler Ultrasound" width="400">
+
+**Real Caption:** Preoperative CT (axial plane) demonstrating appendix rupture with a gas containing collection (red arrows) adjacent to the caecum (green arrow). The collection contains multiple appendicoliths (white arrow).
+
+**Generated Caption:** CT scan of the abdomen showing a large mass in the right lower quadrant.
+
+---
+
+#### Example 3: Panoramic Dental X-Ray
+
+<img src="images/output3.png" alt="Panoramic Dental X-Ray" width="400">
+
+**Real Caption:** Ultrasonography of the Right Femoral Vein StenosisThe ultrasound scan indicated suspected right femoral vein stenosis (arrow).
+
+**Generated Caption:** Ultrasound of the right atrium showing a large mass in the right atrium (arrow).
+
+---
+
+#### Example 4: Thoracic CT Scan
+
+<img src="images/output4.png" alt="Thoracic CT" width="400">
+
+**Real Caption:** Pre-operative OPG showing cyst-like lesion in the right coronoid process (pointed by yellow arrow). Linear radiopacity is the tracer gutta-percha point passed through the extra-oral cutaneous tract (pointed by blue arrows). The gutta percha point is seen abutting the cyst-like lesion in the coronoid process. OPG, orthopantomograph
+
+**Generated Caption:** Axial view of the mandible showing the presence of a large mass in the mandibular fossa.
+
+---
+
 ### Quantitative Metrics:
 
 - **Evaluation Metrics:** BLEU, METEOR, and ROUGE scores were used to evaluate the quality of the generated captions.
